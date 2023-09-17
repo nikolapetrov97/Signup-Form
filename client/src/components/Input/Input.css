@@ -1,0 +1,150 @@
+.input-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  height: 54px;
+  border: 2px solid #eeeeee;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.input-wrapper-error {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  height: 54px;
+  border: 2px solid #f0a399;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.checkbox-wrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.input {
+  border: none;
+}
+
+.icon-wrapper {
+  padding: 0px 10px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 20px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #fff;
+}
+
+input[type="checkbox"]:checked:after {
+  content: "\2713";
+  color: lightgreen;
+}
+
+input[type="checkbox"] {
+  margin-right: 16px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 25px !important;
+  height: 25px !important;
+  appearance: none;
+  border-radius: 10%;
+  padding: 0;
+  border: 1px solid #cdcdcd;
+  box-shadow: none;
+  font-size: 1em;
+}
+
+input:focus {
+  outline: none;
+  color: lightgreen;
+}
+
+.input-wrapper:focus-within {
+  border: 2px solid lightgreen;
+}
+
+.input-wrapper:focus-within .input-icon {
+  color: lightgreen;
+}
+
+.input-wrapper:focus-within .icon-wrapper {
+  background-color: #f1f1f1;
+}
+
+.input-wrapper-error .input-icon {
+  color: #f0a399;
+}
+
+.input-wrapper-error .icon-wrapper {
+  background-color: #f1f1f1;
+}
+
+.input-icon {
+  color: #cdcdcd;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #cdcdcd;
+  opacity: 1; /* Firefox */
+  font-size: 20px;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #cdcdcd;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #cdcdcd;
+}
+
+input:focus::placeholder {
+  color: lightgreen;
+  opacity: 1;
+  font-size: 20px;
+}
+
+.error-message {
+  background-color: rgb(255, 87, 87);
+  width: 100%;
+  color: #fff;
+  padding: 3px 8px;
+  position: absolute;
+  top: 115%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 9999;
+}
+
+.tooltip-arrow {
+  width: 12px;
+  height: 12px;
+  background-color: rgb(255, 87, 87);
+  position: absolute;
+  top: 0;
+  transform: translate(0%, -50%) rotate(45deg);
+  left: 50%;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px white inset; /* Change the color to your own background color */
+  -webkit-text-fill-color: #333;
+}

@@ -1,0 +1,79 @@
+.form-icon {
+  height: 150px;
+  width: auto;
+  position: absolute;
+  top: -80px;
+  right: -20px;
+}
+.form-wrapper {
+  position: relative;
+  padding: 10px 40px;
+  width: 520px;
+  background-color: #fff;
+  box-shadow: 0px 0px 30px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.form-wrapper,
+.inputs-wrapper,
+.buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .form-wrapper {
+    width: 100vw;
+  }
+}
+.inputs-wrapper {
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.inputs-wrapper .input-wrapper {
+  display: flex;
+  flex-basis: 49%;
+  max-width: 49%;
+  -webkit-box-flex: 0;
+  flex-grow: 0;
+}
+
+.form-wrapper .input-wrapper {
+  margin: 0 0 16px 0;
+}
+
+.inputs-wrapper .input-wrapper-error {
+  display: flex;
+  flex-basis: 49%;
+  max-width: 49%;
+  -webkit-box-flex: 0;
+  flex-grow: 0;
+}
+
+.form-wrapper .input-wrapper-error {
+  margin: 0 0 16px 0;
+}
+
+.text {
+  text-align: center;
+}
+
+.bold-text {
+  font-weight: 600;
+}
+
+.sign-in {
+  color: #64c75d;
+  cursor: pointer;
+}
+
+.form > button:nth-of-type(1) {
+  margin-top: 16px;
+}
+
+.buttons-wrapper {
+  gap: 8px;
+}
