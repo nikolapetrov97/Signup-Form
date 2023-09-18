@@ -26,6 +26,11 @@
   .form-wrapper {
     width: 100vw;
   }
+  .form-icon {
+    height: 110px;
+    top: -60px;
+    right: 0px;
+  }
 }
 .inputs-wrapper {
   position: relative;
